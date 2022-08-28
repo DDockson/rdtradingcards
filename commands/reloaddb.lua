@@ -568,7 +568,7 @@ function command.run(message, mt, overwrite)
 
       if not status then
         print("uh oh")
-        message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+        message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@439421870857519104> please fix this thanks)")
       end
 
     end
@@ -701,7 +701,7 @@ function command.run(message, mt, overwrite)
           end)
           if not status then
             print("uh oh")
-            message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@290582109750427648> <@298722923626364928> please fix this thanks)")
+            message.channel:send("Oops! An error has occured! Error message: ```" .. err .. "``` (<@439421870857519104> please fix this thanks)")
           end
           break
         end

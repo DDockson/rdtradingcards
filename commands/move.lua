@@ -38,11 +38,15 @@ function command.run(message, mt)
   elseif wj.ws >= 905 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino" or (uj.lang ~= "en" and request == lang.request_casino_1 or request == lang.request_casino_2 or request == lang.locations_casino)) then
     success = true
     newroom = 5
+  elseif wj.ws >= 906 and (request == "ruins" or request == "the ruins" or request == lang.request_ruins or request == lang.locations_ruins) then
+    success = true
+    newroom = 6
   end
   
   
   if success then
     print("newroom is ".. newroom)
+    print(locations[newroom+1])
     if newroom == uj.room then
       message.channel:send(lang.already_in_1 .. locations[newroom+1] .. lang.already_in_2)
       return
