@@ -1,0 +1,9 @@
+{
+	"using_bridge": "Using Bridge...",
+	"use_losebridge": "Unfortunately, you cannot find a way to go out of the **Ruins.**",
+	"use_bridge": "You climb up to the **Bridge**, going to the **Windy Mountains**...",
+	
+	"use_cliff": "You tried to climb the **Cliff**, but you only climbed up an inch. You fall down back to the **Ruins**...",
+	
+	"use_table": "Interestingly, you cannot seem to find a way to open the **Barrels**, or even look at what could be inside of them...",
+}

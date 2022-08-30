@@ -8,7 +8,7 @@ function command.run(message, mt)
   if not mt[1] then
     mt[1] = "pyrowmid"
   end
-  local locations = {lang.locations_pyrowmid, lang.locations_lab, lang.locations_mountains, lang.locations_shop, lang.locations_hallway, lang.locations_casino}
+  local locations = {lang.locations_pyrowmid, lang.locations_lab, lang.locations_mountains, lang.locations_shop, lang.locations_hallway, lang.locations_casino, lang.locations_ruins}
   local success = false
   local request = string.lower(mt[1])
   local newroom = 0
@@ -38,6 +38,9 @@ function command.run(message, mt)
   elseif wj.ws >= 905 and (request == "casino" or request == "shadycasino" or request == "the shady casino" or request == "shady casino" or (uj.lang ~= "en" and request == lang.request_casino_1 or request == lang.request_casino_2 or request == lang.locations_casino)) then
     success = true
     newroom = 5
+  elseif wj.ws >= 906 and (request == "ruins" or request == "the ruins" or (uj.lang ~= "en" and request == lang.request_ruins or request == lang.locations_ruins)) then
+    success = true
+    newroom = 6
   end
   
   

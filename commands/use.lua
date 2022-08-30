@@ -749,6 +749,39 @@ o-''|\\_____/)
     end
   end
     
+  ----------------------------------------------------------RUINS
+  if uj.room == 6 then
+    local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/ruins.json")
+    if (request == "bridge" or (uj.lang ~= "en" and request == lang.request_bridge)) then 
+      if uj.duelwin == true then
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = lang.using_bridge,
+          description = lang.use_bridge,
+        }}
+        uj.room = 2
+      else
+        message.channel:send{embed = {
+          color = 0x85c5ff,
+          title = lang.using_bridge,
+          description = lang.use_losebridge,
+        }} 
+      end
+            
+    elseif (request == "cliff" or (uj.lang ~= "en" and request == lang.request_cliff)) then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = lang.using_cliff,
+        description = lang.use_cliff,
+      }}
+      
+    elseif (request == "desk" or (uj.lang ~= "en" and request == lang.request_desk)) then 
+      message.channel:send("sry i dont have time right now to make this feature")
+    else
+      found = false
+    end
+  end
+  
   if (not found) and (not bypass) then ----------------------------------NON-ROOM ITEMS GO HERE!-------------------------------------------------
     local lang = dpf.loadjson("langs/" .. uj.lang .. "/use/nonroom.json","")
     if request == "token" or (uj.lang ~= "en" and request == lang.request_token) then

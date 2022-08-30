@@ -1,0 +1,13 @@
+{
+	"looking_at_ruins": "Looking at the Ruins...",
+	"looking_ruins": "The **Ruins** under the **Bridge** revealed themselves. You can see a **Table** in front of the steep **Cliff.**",
+	
+	"looking_at_bridge": "Looking at Bridge...",
+	"looking_bridge": "The **Bridge** where you fell from seems a little too high for you to reach. There must be another way to get up... ",
+	
+	"looking_at_cliff": "Looking at Cliff...",
+	"looking_cliff": "The **Cliff**, unsurprisingly, seems so steep to climb up. You will end up falling into the Ruins again.",
+	
+	"looking_at_desk": "Looking at Desk...",
+	"looking_desk": "The **Desk** in front of the **Cliff** has **10 slots** to put cards on. Maybe you can make a **New Deck** by **Using** the **Desk.**",
+}

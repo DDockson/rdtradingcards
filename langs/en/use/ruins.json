@@ -1,0 +1,8 @@
+{
+	"using_bridge": "Using Bridge...",
+	"use_losebridge": "Unfortunately, you cannot find a way to go out of the **Ruins.**",
+	"use_bridge": "You climb up to the **Bridge**, going to the **Windy Mountains**...",
+	
+	"using_cliff": "Using Cliff...",
+	"use_cliff": "You tried to climb the **Cliff**, but you only climbed up an inch. You fall down back to the **Ruins**...",
+}

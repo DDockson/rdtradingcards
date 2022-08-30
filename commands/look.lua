@@ -545,6 +545,46 @@ function command.run(message, mt)
       found = false
     end
   end
+    
+  if uj.room == 6 then     --------------------------------------------------RUINS--------------------------------------------------------------------------   
+    local lang = dpf.loadjson("langs/" .. uj.lang .. "/look/ruins.json", "")
+    local request = string.lower(mt[1])
+    if (request == "ruins" or request == "the ruins" or mt[1] == "" or (uj.lang ~= "en" and mt[1] == lang.request_ruins)) then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = lang.looking_at_ruins,
+        description = lang.looking_ruins,
+        image = {
+          url = "https://media.discordapp.net/attachments/1013392483931136020/1013808028509802576/ruins.png"
+        }
+      }}
+
+    elseif (string.lower(mt[1]) == "bridge" or (uj.lang ~= "en" and mt[1] == lang.request_bridge))  then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = lang.looking_at_bridge,
+        description = lang.looking_bridge,
+      }}
+      
+    elseif (string.lower(mt[1]) == "cliff" or (uj.lang ~= "en" and mt[1] == lang.request_cliff))  then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = lang.looking_at_cliff,
+        description = lang.looking_cliff,
+      }}
+      
+    elseif (request == "desk" or (uj.lang ~= "en" and mt[1] == lang.request_desk)) then 
+      message.channel:send{embed = {
+        color = 0x85c5ff,
+        title = lang.looking_at_desk,
+        description = lang.looking_desk,
+      }}
+
+    else
+      found = false
+    end
+  end
+  
   
   if not found then ----------------------------------NON-ROOM ITEMS GO HERE!--------------------------------------------------
     local lang = dpf.loadjson("langs/" .. uj.lang .. "/look/nonrooms.json","")
