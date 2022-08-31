@@ -1,0 +1,9 @@
+{
+	"using_bridge": "다리를 사용하니...",
+	"use_losebridge": "불행하게도, **폐허**에서 나갈 방법을 찾을 수 없었다.",
+	"use_bridge": "당신은 **다리** 위에 올라가서, **바람부는 산**으로 향했다...",
+	
+	"use_cliff": "당신은 **절벽**을 오르려고 했지만, 몇 센티미터 밖에 오르지 못했다. 당신은 다시 **폐허**로 떨어진다...",
+	
+	"use_table": "Interestingly, you cannot seem to find a way to open the **Barrels**, or even look at what could be inside of them...",
+}
